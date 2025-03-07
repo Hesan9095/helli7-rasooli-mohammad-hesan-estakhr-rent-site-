@@ -1,0 +1,29 @@
+:root{
+    --main-color:#0D6EFD;
+    --gray-color:#73767C;
+    --green-color:#00966D;
+    --orange-color:#D67114;
+}
+
+/*  *****************CSS RESET**************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B yekan', sans-serif;
+    direction: rtl;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin:0 180px;
+}
