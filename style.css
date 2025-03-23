@@ -7,13 +7,19 @@
 
 /*  *****************CSS RESET**************** */
 
+@font-face {
+    font-family: 'BYekan';
+    src: url('../fonts/BYekan.woff2') format('woff2'),
+         url('../fonts/BYekan.woff') format('woff');
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'B yekan', sans-serif;
     direction: rtl;
-
 }
 
 
@@ -26,17 +32,25 @@ a{
 }
 
 .container{
+    max-width: 1200px;
+    padding: 0 15px;  
     margin:0 180px;
 }
 
 /* ...................................................................................................... */
 
 .main-header{
-    /* padding: 40px 0; */
-    margin-top:40px;
+    background-image: url(../pic/header-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 676px;
+    padding-top:40px;
+    border-radius: 0 0 20px 20px;
 }
 
-.test{
+
+.flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,9 +61,11 @@ a{
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding-right: 104px;
+    font-weight:bold;
 }
 
-.logoh img{
+.logo img{
     width: 132px;
 }
 
@@ -71,7 +87,7 @@ body{
     align-items: center;
 }
 
-.agohi{
+.agahi{
     background-color: var(--main-color);
     color: #fff;
     border-radius: 8px;
@@ -80,4 +96,82 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cards{
+    display: flex;
+    position: absolute;
+    gap: 24px;
+    width: 90%;
+    top: 382px;
+    right: 108px;
+}
+
+
+.khane{
+    width: 30%;
+    height: 376px;
+    background-image: url(../pic/khane.png);
+    background-size: cover;
+    top: 382px; 
+    left: 108px;
+    border-radius: 16px;
+}
+
+.aparteman{
+    width: 30%;
+    height: 376px;
+    background-image: url(../pic/aparteman.png);
+    background-size: cover;
+    top: 382px; 
+    left: 524px;
+    border-radius: 16px;
+}
+
+.vila{
+    width: 30%;
+    height: 376px;
+    background-image: url(../pic/vila.png);
+    background-size: cover;
+    top: 382px; 
+    left: 940px;
+    border-radius: 16px;
+}
+
+.btm-part{
+    width: 376px;
+    height: 78px;
+    background-color: #fff;
+    top: 290px;
+    position: relative;
+    justify-self: center;
+    border-radius: 8px;
+}
+
+.left-part img{
+    position: relative;
+    width: 48px;    
+    height: 48px;
+    top: 15px;
+    right: 312px;
+    
+}
+
+.right-part{
+    position: relative;
+    top: -45px;
+    right: 16px;
+    
+}
+
+.header-title{
+    position: relative;
+    justify-self: center;
+    top: 60px;
+    color: #fff;
+    font-size: 24px;    
+}
+
+.renti{
+    color: var(--main-color);
 }
