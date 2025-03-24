@@ -40,7 +40,7 @@ a{
 /* ...................................................................................................... */
 
 .main-header{
-    background-image: url(../pic/header-banner.png);
+    background-image: url(./pic/header-banner.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body{
 .khane{
     width: 30%;
     height: 376px;
-    background-image: url(../pic/khane.png);
+    background-image: url(./pic/khane.png);
     background-size: cover;
     top: 382px; 
     left: 108px;
@@ -121,7 +121,7 @@ body{
 .aparteman{
     width: 30%;
     height: 376px;
-    background-image: url(../pic/aparteman.png);
+    background-image: url(./pic/aparteman.png);
     background-size: cover;
     top: 382px; 
     left: 524px;
@@ -131,7 +131,7 @@ body{
 .vila{
     width: 30%;
     height: 376px;
-    background-image: url(../pic/vila.png);
+    background-image: url(./pic/vila.png);
     background-size: cover;
     top: 382px; 
     left: 940px;
