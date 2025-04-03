@@ -25,6 +25,7 @@
 
 ul{
     list-style: none;
+    cursor: pointer;
 }
 
 a{
@@ -67,10 +68,11 @@ a{
 
 .logo img{
     width: 132px;
+    cursor: pointer;
 }
 
 body{
-    background-color: gray;
+    background-color: #fff;
 }
 
 .login a img{
@@ -102,44 +104,50 @@ body{
     display: flex;
     position: absolute;
     gap: 24px;
-    width: 90%;
     top: 382px;
-    right: 108px;
+    justify-self: center;
 }
 
 
 .khane{
-    width: 30%;
-    height: 376px;
+    width: 392px;
     background-image: url(../pic/khane.png);
     background-size: cover;
     top: 382px; 
     left: 108px;
     border-radius: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 .aparteman{
-    width: 30%;
-    height: 376px;
+    width: 392px;
     background-image: url(../pic/aparteman.png);
     background-size: cover;
     top: 382px; 
     left: 524px;
     border-radius: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 .vila{
-    width: 30%;
+    width: 392px;
     height: 376px;
     background-image: url(../pic/vila.png);
     background-size: cover;
     top: 382px; 
     left: 940px;
     border-radius: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
+.khane:hover, .aparteman:hover, .vila:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+
 .btm-part{
-    width: 376px;
+    width: 355px;
     height: 78px;
     background-color: #fff;
     top: 290px;
@@ -148,20 +156,22 @@ body{
     border-radius: 8px;
 }
 
-.left-part img{
-    position: relative;
-    width: 48px;    
+.left-part{
+    display: flex;
+    width: 48px;
     height: 48px;
+    position: relative;
     top: 15px;
-    right: 312px;
-    
+    justify-self: left;
+    margin: auto 16px;
 }
 
 .right-part{
+    margin: 7px auto;
     position: relative;
     top: -45px;
     right: 16px;
-    
+    cursor: pointer;
 }
 
 .header-title{
@@ -174,4 +184,40 @@ body{
 
 .renti{
     color: var(--main-color);
+}
+
+.mahsoolat{
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.top-title{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 625px;
+}
+
+.top-title-left{
+    width: 155px;
+    height: 40px;
+}
+
+.top-title-right{
+    width: 444px;
+    height: 45px;
+    font-size: 26px;
+    margin-right: 110px;
+}
+
+.content{
+    display: flex;
+}
+
+.radif1{
+    display: flex;
+    background-color: #00966D;
+    width: 288px;
+    height: 355px;
 }
